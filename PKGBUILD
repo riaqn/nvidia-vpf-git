@@ -1,7 +1,7 @@
 # Maintainer: Daniel Bermond <dbermond@archlinux.org>
 
 pkgname=nvidia-vpf-git
-pkgver=r210.g897ffb8
+pkgver=r232.gfad2753
 pkgrel=1
 pkgdesc='NVIDIA Video Processing Framework (git version)'
 arch=('x86_64')
@@ -14,7 +14,7 @@ conflicts=('nvidia-vpf')
 source=('git+https://github.com/NVIDIA/VideoProcessingFramework.git'
         '010-nvidia-vpf-git-fix-install.patch')
 sha256sums=('SKIP'
-            'd495f12e41c42320fe72cff38dba17a21e44fe372fd4f5f28bc808dea6effc66')
+            '568c79e802ce442369a57a21f79d8d8a31680054e71140d178e6106c1af00f9b')
 
 prepare() {
     patch -d VideoProcessingFramework -Np1 -i "${srcdir}/010-nvidia-vpf-git-fix-install.patch"
